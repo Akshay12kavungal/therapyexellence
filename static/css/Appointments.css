@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-image: url(/images/banner.jpg);
+    background-size: cover;
+}
+
+.profile-card h3 {
+    padding: 10px;
+    
+}
+
+/* ---------- body element's */
+.container {
+    height: auto;
+    backdrop-filter: blur(20px);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 60px;
+    margin-right: 10px;
+}
+
+.profile-card {
+    width: 1100px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid dimgray;
+    padding: 10px;
+    margin-left: 20px;
+
+    display: grid;
+    grid-template-rows: 10px auto;
+   
+}
+
+ 
+  
+
+
+    .account-info {
+        display: grid;
+       
+        
+        padding: 10px;
+        margin-top:10px;
+        margin-bottom: 10px;
+        margin-left:-30px;
+        margin-right: 0px;
+        }
+        .data {
+           
+            flex-direction: column;
+            justify-content: space-between;
+            color: var(--secondary-color);
+            padding: 20px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            margin-left: 10px;
+
+
+
+        }
+            .important-data {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+
+
+            }
+            
+            .data-item .value {
+                color: black;
+
+               
+            }
+             .data-item .title {
+                color: black;
+                font-size: 12px;
+                display: flex;
+                
+            }
+
+                .important-data .value {
+                    font-size: 15px;
+
+                }
+                
+
+
+.circle-service {
+    border-radius: 50%;
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.circle-service a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+      
+               
+       
+        
+
+     

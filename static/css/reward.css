@@ -1,0 +1,61 @@
+table {
+    border-collapse: collapse;
+    
+    width: 60%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the table horizontally */
+    padding: 20px; /* Add padding around the table */
+    margin-left: 20px;
+    border-radius: 10px;
+    
+
+  }
+
+  th {
+    background-color: orange;
+    padding: 10px;
+    text-align: left;
+    color: white;
+  }
+
+  td, th {
+    
+    padding: 10px;
+
+  }
+
+
+  .container {
+    height: auto;
+    backdrop-filter: blur(20px);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 30px;
+    margin-right: 20px;
+}
+h2{
+
+ 
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.rank {
+      background-color: yellow;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 60%;
+    }
+.text1 {
+
+  margin-left: 15px;
+  
+
+  
+ 
+
+ 
+
+}

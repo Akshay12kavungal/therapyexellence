@@ -1,0 +1,80 @@
+
+
+.profile-card h3 {
+    padding: 10px;
+    
+}
+
+
+
+.profile-card {
+    width: 1070px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid dimgray;
+   
+    margin-left: 10px;
+  
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    display: grid;
+    grid-template-rows: 10px auto;
+   
+}
+
+ 
+  
+
+
+    .account-info {
+        display: grid;
+       
+        
+        padding: 10px;
+        margin-top:10px;
+        margin-bottom: 10px;
+        margin-left:-30px;
+        margin-right: 0px;
+        }
+        .data {
+           
+            flex-direction: column;
+            justify-content: space-between;
+            color: var(--secondary-color);
+            padding: 20px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            margin-left: 10px;
+
+
+
+        }
+            .important-data {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+
+
+            }
+            
+            .data-item .value {
+                color: black;
+
+               
+            }
+             .data-item .title {
+                color: black;
+                font-size: 12px;
+                display: flex;
+                
+            }
+
+                .important-data .value {
+                    font-size: 15px;
+
+                }
+                
