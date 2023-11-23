@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Sign in</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- MATERIAL DESIGN ICONIC FONT -->
+        
+
+        <!-- STYLE CSS -->
+        <link rel="stylesheet" href="static/css/login2.css">
+  
+</head>
+<body>
+  <div class="container2">
+     <div class="container">
+    <div class="combined-section">
+      <div class="image-section">
+         <img src="static/img/loginimage.jpg" alt="Background Image">
+         <img class="overlay-image" src="static/img/logo_2.png" alt="Overlay Image">
+      </div>
+      <div class="login-section">
+        
+
+        <h2>Sign In</h2>
+        <form action="therapistlogin" method="POST">
+
+
+             {% csrf_token %}
+              
+             
+            <label>Username:</label>
+         
+          <input type="text"   name="Username" value="{{Username}}" class="form-control"required>
+          
+          <label>Phone Number:</label>
+           <input type="text"  name="Phone_Number" value="{{Phone_Number}}" class="form-control" required>
+
+            <div class="form-link" align="right-side">
+            <a href="therapistforgetpassword" class="forgot-pass">Forgot password?</a>
+            </div>
+          
+         
+          <button>Sign In</button>
+       
+                    
+
+         <div class="form-link">
+            <a href="therapistlogin_with_password">
+                        
+            <span>Login with password?</span>
+            </a>
+            </div><br>
+
+
+
+            <div ><span>Don't have an account? <a href="selectsignupprofile">Signup</a></span></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

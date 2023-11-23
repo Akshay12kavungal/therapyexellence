@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Sign in</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+   <!-- MATERIAL DESIGN ICONIC FONT -->
+        
+   <!-- STYLE CSS -->
+   <link rel="stylesheet" href="{% static 'css/login2.css' %}">
+</head>
+<body>
+  <div class="container2">
+    <div class="container">
+      <div class="combined-section">
+        <div class="image-section">
+          <img src="{% static 'img/loginimage.jpg' %}" alt="Background Image">
+          <img class="overlay-image" src="{% static 'img/logo_2.png' %}" alt="Overlay Image">
+        </div>
+        <div class="login-section">
+          <h3>Select Your Profile</h3>
+          <div class="row1">
+           <div class="item1">
+
+            <div class="profile-option3">
+                 <a href="supervisorsignup" class="">Supervisor
+                <img src="static/img/SVG/supervisor.svg" width="30" height="30"></a>
+
+              
+            </div>
+        </div>
+
+
+
+            <div class="item1">
+            <div class="profile-option3">
+                 <a href="therapistsignup" class="">Therapist
+                <img src="static/img/SVG/therapist.svg" width="30" height="30"></a>
+             
+              
+            </div>
+        </div>
+
+           <div class="item1">
+            <div class="profile-option3">
+                 <a href="signup" class="">Client
+                <img src="static/img/SVG/client.svg" width="30" height="30"></a>
+             
+              
+            </div>
+        </div>
+        </div>
+
+        
+    </div>
+    <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

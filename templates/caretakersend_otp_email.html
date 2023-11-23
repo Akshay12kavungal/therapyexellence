@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Login </title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/style3.css' %}" >                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+                        
+    </head>
+    <style>
+    body {
+      background-image: url("static/img/priscilla-du-preez-F9DFuJoS9EU-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+    <body>
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+                   
+                     <form action="caretakersend_otp_email" method="POST">
+                         {% csrf_token %}
+                        <div class="field input-field">
+                            
+                                <input type="Email" placeholder="Email" name="Email"  value="{{Email}}" required><br>
+
+                        </div>
+
+                        
+
+                        
+
+                        <div class="field button-field" >
+                           <button type="verify"  >verify</button>
+                        </div>
+
+                    </form>
+
+                  
+                
+
+               
+
+                
+                    </div>
+
+            </div>
+
+           
+
+            
+
+        <!-- JavaScript -->
+        <script src="{% static 'js/script.js' %}" ></script>
+
+    </body>
+</html>

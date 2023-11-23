@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Sign in</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- MATERIAL DESIGN ICONIC FONT -->
+        
+
+        <!-- STYLE CSS -->
+        <link rel="stylesheet" href="static/css/login2.css">
+  
+</head>
+<body>
+  <div class="container2">
+     <div class="container">
+    <div class="combined-section">
+      <div class="image-section">
+         <img src="static/img/loginimage.jpg" alt="Background Image">
+         <img class="overlay-image" src="static/img/logo_2.png" alt="Overlay Image">
+      </div>
+      <div class="login-section">
+        <form action="send_otp_email" method="POST">
+                     {% csrf_token %}
+                    <h3>Sign In</h3>
+
+             
+
+
+            <label>Email:</label>
+         
+           <input type="text" name="Email"  value="{{Email}}" class="form-control"required>
+          
+          
+
+          
+         
+          <button>Verify</button>
+       
+                    
+</form>
+     <!-- JavaScript -->
+        <script src="{% static 'js/script.js' %}" ></script>
+
+      </div>
+      </div>
+      </div>
+      </div>  
+    </body>
+</html>

@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Signup  </title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/style3.css' %}" >                
+
+                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <title>Signup</title>
+                        
+    </head>
+    <style>
+    body {
+           background-image: url("static/img/priscilla-du-preez-F9DFuJoS9EU-unsplash.jpg");      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+    <body>
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Sign Up</header>
+
+                    <form action="caretakersignup" method="POST">
+                         {% csrf_token %}
+                        <div class="field input-field">
+                                <input type="text" placeholder="First_Name" name="First_Name"  value="{{First_Name}}" required><br>
+
+                        </div>
+
+                        <div class="field input-field">
+                                <input type="text" placeholder="Last_Name" name="Last_Name"  value="{{Last_Name}}" required><br>
+
+                        </div>
+
+                        <div class="field input-field">
+                                <input type="text" placeholder="Username" name="Username"  value="{{Username}}" required><br>
+
+                        </div>
+
+                        <div class="field input-field">
+                             <input type="text" placeholder="Enter Your Email" name="Email"  value="{{Email}}" required><br>
+                        
+                        </div>
+                            
+                        </div>
+                        <div class="field input-field">
+                             <input type="text" placeholder="Phone_Number" name="Phone_Number"  value="{{Phone_Number}}" required><br>
+                        
+                        </div>
+                        <div class="field input-field">
+                             <input type="Password" placeholder="Password" name="Password"  value="{{Password}}" required><br>
+                        </div>
+                        <div class="field input-field">
+                             <input type="Password" placeholder="Confirm_Password" name="Confirm_Password"  value="{{Confirm_Password}}" required><br>
+                        </div>
+                       
+
+                        <div class="field button-field">
+                            <button>Signup</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="caretakerlogin" >Login</a></span>
+                    </div>
+                </div>
+
+                
+
+                
+        
+
+           
+
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

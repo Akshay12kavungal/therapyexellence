@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- MATERIAL DESIGN ICONIC FONT -->
+        
+
+        <!-- STYLE CSS -->
+        <link rel="stylesheet" href="static/css/signup.css">
+  
+</head>
+<body>
+  <div class="container2">
+     <div class="container">
+    <div class="combined-section">
+      <div class="image-section">
+         <img src="static/img/loginimage.jpg" alt="Background Image">
+         <img class="overlay-image" src="static/img/logo_2.png" alt="Overlay Image">
+      </div>
+      <div class="login-section">
+       <form action="therapistsignup" method="POST">
+                     {% csrf_token %}
+                    <h3>Sign up</h3>
+
+             
+
+             <div class="form-group">
+              <label>First Name:</label>
+                        <input type="text"  class="form-control"  name="First_Name"value="{{First_Name}}" required>
+              <label>Last Name:</label>
+                        <input type="text" class="form-control"  name="Last_Name" value="{{Last_Name}}" required>
+                    </div>
+
+              <label>Username:</label>
+         
+              <input type="text" class="form-control" name="Username"  value="{{Username}}" required>
+
+
+              <label>Email:</label>
+         
+              <input type="text" value="{{Email}}" name="Email" class="form-control"required>
+            
+
+              <label>Phone Number:</label>
+              <input type="text"  name="Phone_Number" value="{{Phone_Number}}" class="form-control" required>
+           
+          
+              <label>Password:</label>
+              <input type="Password"  name="Password" name="Password" value="{{Password}}"  class="form-control" required>
+
+              <label>Confirm Password:</label>
+              <input type="Password"  name="Confirm_Password"  value="{{Confirm_Password}}"  class="form-control" required>
+              
+
+          
+         
+          <button>Sign Up</button>
+       
+                    
+</form>
+     <!-- JavaScript -->
+        <script src="{% static 'js/script.js' %}" ></script>
+
+      </div>
+      </div>
+      </div>
+      </div>  
+    </body>
+</html>
