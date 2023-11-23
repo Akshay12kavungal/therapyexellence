@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Verification </title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/style3.css' %}" >                
+
+                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+                        
+    </head>
+    <style>
+    body {
+      background-image: url("images/priscilla-du-preez-F9DFuJoS9EU-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+    <body>
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Verification</header>
+
+                    <form action="adminverification" method="POST">
+                         {% csrf_token %}
+                        <div class="field input-field">
+                            <input type="text" name="otp" placeholder="Enter Your Verification Code" value="{{otp}}" class="input">
+                                
+                        </div>
+                        
+
+
+                        
+
+                       
+                        <div class="field button-field">
+                            <button>Continue</button>
+                        </div>
+                    </form>
+
+                    
+
+                
+            <!-- Signup Form -->
+
+            
+
+        <!-- JavaScript -->
+ <script src="{% static 'js/script.js' %}" ></script>
+    </body>
+</html>
