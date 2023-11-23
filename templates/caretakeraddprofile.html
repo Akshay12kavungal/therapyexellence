@@ -1,0 +1,303 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Therapy Exellence/Admin</title>
+    <!-- GLOBAL MAINLY STYLES-->
+
+   
+    
+   
+    <link rel="stylesheet" href="{% static 'css/addprofile.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/Appointments.css' %} ">
+
+
+   
+    <!-- PAGE LEVEL STYLES-->
+   
+
+    <link rel="stylesheet" href="{% static 'css/sidebar.css' %}" >
+    
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- list-->
+    <link rel="stylesheet" href="{% static 'css/list1.css' %}" > 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--style for add profile -->
+    
+   
+</head>
+<body>
+
+
+
+<div class="sidebar">
+
+     
+        
+        
+        <img src="static/img/images/logo_2.png" alt="Side Navigation Image">
+        
+
+      
+
+      
+
+      <ul class="nav-list">
+        
+        <li>
+          <a href="adminhome">
+           <i><iconify-icon icon="material-symbols:dashboard"></iconify-icon></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+      
+        </li>
+        <li>
+          <a href="adprofile">
+           <i><iconify-icon icon="iconamoon:profile-duotone"></iconify-icon></i>
+            <span class="links_name">Profile</span>
+          </a>
+         
+        </li>
+        <li>
+          <a href="adnotification">
+             <i><iconify-icon icon="iconamoon:notification-duotone"></iconify-icon></i>
+            <span class="links_name">Notification</span>
+          </a>
+         
+        </li>
+        <li>
+
+          <ul>
+          <li class="section">
+
+              <a href="#"><i><iconify-icon icon="uil:calender"></iconify-icon></i>
+                  <span class="links_name">Manage Appointments</span>
+              </a>
+              <ul class="sub-sections">
+                  <li>
+
+                      <a href="adupcomingappointment"><i><iconify-icon icon=""></iconify-icon></i><span class="links_name">Appointments</span></a>
+                  </li>
+                  <li>
+                      <a href="adpastappointment"><i><iconify-icon icon=""></iconify-icon></i><span class="links_name">Past Appointments</span></i></a>
+                  </li>
+              </ul>
+          </li>
+        </ul>
+
+          <ul>
+          <li class="section">
+
+              <a href="#"><i><iconify-icon icon="healthicons:wold-care"></i>
+                  <span class="links_name">Give Support</span>
+              </a>
+              <ul class="sub-sections">
+                  <li>
+
+                      <i><a href="adsupervisorlist"><i><iconify-icon icon=""></iconify-icon></i>
+                       <span class="links_name">Supervisor</span></a>
+                  </li>
+                  <li>
+                      <a href="adtherapistlist"><i><iconify-icon icon=""></iconify-icon></i><span class="links_name">Therapist</span></a>
+                  </li>
+                  <li>
+
+                      <a href="adcaretakerlist"><i><iconify-icon icon=""></iconify-icon></i><span class="links_name">Caretaker</span></a>
+                  </li>
+                  <li>
+                      <a href="aduserlist"><i><iconify-icon icon=""></iconify-icon></i><span class="links_name">User</span></a></i>
+                  </li>
+              </ul>
+          </li>
+
+          <ul>
+          <li class="section">
+
+
+              <a href="#"><i><iconify-icon icon="fa-solid:users"></i>
+                  <span class="links_name">User Management</span>
+              </a>
+              <ul class="sub-sections">
+                  <li>
+
+                    <i>  <a href="adsupervisormanagement"><i><iconify-icon icon=""></iconify-icon></i><span class="links_name">Supervisor</span></a>
+                  </li>
+                  <li>
+                      <a href="adtherapistmanagement"><i><iconify-icon icon=""></iconify-icon></i><span class="links_name">Therapist</span></a>
+                  </li>
+                  <li>
+
+                      <a href="adcaretakermanagement"><i><iconify-icon icon=""></iconify-icon></i><span class="links_name">Caretaker</span></a>
+                  </li>
+                  <li>
+                      <a href="adusermanagement"><i><iconify-icon icon=""></iconify-icon></i><span class="links_name">User</span></a></i>
+                  </li>
+
+
+                 
+              </ul>
+          </li>
+              </ul>
+          </li>
+
+
+
+        <li>
+         
+         
+            <a href="adinvoice"><i><iconify-icon icon="la:file-invoice"></i>
+            <span class="links_name">Invoice</span>
+          </a>
+        
+        </li>
+        <li>
+          
+          <a href="adrewardsystem"><i><iconify-icon icon="fluent:reward-12-filled"></i>
+            <span class="links_name">Reward System</span>
+          </a>
+         
+        </li>
+        <li>
+          
+            <a href="adfaq"><i><iconify-icon icon="streamline:interface-help-question-circle-circle-faq-frame-help-info-mark-more-query-question"></i>
+            <span class="links_name">FAQs</span>
+          </a>
+         
+        </li>
+        
+
+        <li>
+          
+            <a href="adsupport"><i><iconify-icon icon="bx:headphone"></i>
+            <span class="links_name">Support</span>
+          </a>
+          
+          
+        </li>
+        <li>
+          <a href="logout">
+            <i><iconify-icon icon="material-symbols:logout"></i>
+            <span class="links_name">Logout</span>
+          </a>
+         
+        </li>
+
+       
+         
+      </ul>
+    </div>
+    <section class="home-section">
+ 
+ <nav>
+    <ul>
+      <li><h3><a href="#">Admin</a></li></h3>
+       <li class="search-bar">
+        <form>
+          <input type="text" placeholder="Search">
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </li>
+      <li>
+        
+          
+          
+          <button class="my-button1">Delicated Access</button>
+        
+      </li>
+      <img src="static/img/images/Ellipse_1.png">
+       <li class="right">
+  <a href="#">Akshay</a>
+  
+</li>
+   
+    </ul>
+  </nav>
+
+
+   <div class="container">
+
+
+        <div class="profile-card">
+          <h3 >Add Profile</h3>
+      
+
+<div class="account-info">
+                    <div class="data">
+                        <div class="important-data">
+                            <section class="data-item">
+   
+</div>
+</div>
+</div>
+
+      
+         
+        <div class="right-side">
+          
+          
+           <form  method="POST">
+                {% csrf_token %}
+              
+              <div class="input-box">
+              <input type="text" placeholder="First_Name" name="First_Name"  value="{{First_Name}}" required><br>
+            </div>
+            <div class="input-box">
+               <input type="text" placeholder="Last_Name" name="Last_Name"  value="{{Last_Name}}" required><br>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Username" name="Username"  value="{{Username}}" required><br>
+
+            </div>
+            <div class="input-box">
+
+              <input type="text" placeholder="Enter Your Email" name="Email"  value="{{Email}}" required><br>
+                        
+            </div>
+            <div class="input-box">
+                
+               <input type="text" placeholder="Phone_Number" name="Phone_Number"  value="{{Phone_Number}}" required><br>
+                        
+            </div>
+            <div class="input-box">
+                
+              <input type="text" placeholder="Password" name="Password"  value="{{Password}}" required><br>
+            </div>
+            <div class="input-box">
+                
+              <input type="text" placeholder="Confirm_Password" name="Confirm_Password"  value="{{Confirm_Password}}" required><br>
+            </div><br>
+            
+
+           
+             
+              <button type="submit" class="my-button green-button">Add profile</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+        
+         
+       
+   
+
+
+
+
+   
+    <script src="static/js/script.js"></script>
+    
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+   
+</body>
+
+</html>

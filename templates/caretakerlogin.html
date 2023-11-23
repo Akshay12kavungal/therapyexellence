@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Login </title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/style3.css' %}" >                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+                        
+    </head>
+    <style>
+    body {
+      background-image: url("static/img/priscilla-du-preez-F9DFuJoS9EU-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+    <body>
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+                   
+                     <form action="caretakerlogin" method="POST">
+                         {% csrf_token %}
+                        <div class="field input-field">
+                            
+                                <input type="text" placeholder="Username" name="Username"  value="{{Username}}" required><br>
+
+                        </div>
+
+                        <div class="field input-field">
+                         <input type="text" placeholder="Phone_Number" name="Phone_Number"  value="{{Phone_Number}}" required><br>
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="caretakerforgetpassword" class="forgot-pass">Forgot password?</a>
+                        </div>
+                        
+
+                        <div class="field button-field" >
+                           <button type="submit"  >Login</button>
+                        </div>
+
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="caretakersignup" >Signup</a></span>
+                    </div>
+                </div>
+                <div class="media-options">
+                    <a href="caretakersend_otp_email" class="field google">
+                        <img src="static/img/Gmail.png" alt="" class="google-img">
+                        <span>Login with Gmail</span>
+                    </a>
+                </div>
+                 <div class="media-options">
+                    <a href="caretakerlogin_with_password" class="field google">
+                        
+                        <span>Login with password</span>
+                    </a>
+                </div>
+
+               
+
+                
+                    </div>
+
+            </div>
+
+            <!-- Signup Form -->
+
+            
+
+        <!-- JavaScript -->
+        <script src="{% static 'js/script.js' %}" ></script>
+
+    </body>
+</html>
